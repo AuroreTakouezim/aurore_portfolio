@@ -7,6 +7,15 @@ img{max-width:100%;display:block}
 a{color:var(--brand);text-decoration:none}
 .container{max-width:1100px;margin:0 auto;padding:0 1.2rem}
 
+/*A Propos*/
+
+.section--accent {
+  background: linear-gradient(0deg, var(--accent-tint), var(--accent-tint)), var(--accent-bg); border-top: 1px solid var(--accent-border); border-bottom: 1px solid var(--accent-border);}
+
+.section--accent .intro { background: color-mix(in srgb, var(--card) 80%, transparent); border: 1px solid var(--border); border-radius: 16px; padding: 1.2rem; box-shadow: var(--shadow); }
+
+
+
 /* Nav */
 .nav{display:flex;align-items:center;justify-content:space-between;padding:1rem 1.2rem;position:sticky;top:0;background:rgba(15,18,32,.7);backdrop-filter:blur(10px);border-bottom:1px solid var(--border);z-index:10}
 .logo{display:inline-grid;place-items:center;width:40px;height:40px;border-radius:10px;background:linear-gradient(135deg,var(--brand),var(--brand-2));color:white;font-weight:700}
