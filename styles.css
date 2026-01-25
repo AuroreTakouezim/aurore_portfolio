@@ -1,0 +1,65 @@
+/* Styles – Portfolio Aurore (FR) */
+:root{--bg:#0f1220;--bg-alt:#171a2b;--text:#e7e9ee;--muted:#a9afc3;--brand:#6aa6ff;--brand-2:#a36bff;--card:#13162a;--border:#232846;--shadow:0 10px 30px rgba(0,0,0,.35)}
+*{box-sizing:border-box}
+html,body{padding:0;margin:0}
+body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif;background:linear-gradient(180deg,var(--bg),#0c0f1a 50%,var(--bg));color:var(--text);line-height:1.6}
+img{max-width:100%;display:block}
+a{color:var(--brand);text-decoration:none}
+.container{max-width:1100px;margin:0 auto;padding:0 1.2rem}
+
+/* Nav */
+.nav{display:flex;align-items:center;justify-content:space-between;padding:1rem 1.2rem;position:sticky;top:0;background:rgba(15,18,32,.7);backdrop-filter:blur(10px);border-bottom:1px solid var(--border);z-index:10}
+.logo{display:inline-grid;place-items:center;width:40px;height:40px;border-radius:10px;background:linear-gradient(135deg,var(--brand),var(--brand-2));color:white;font-weight:700}
+.nav__links{display:flex;gap:1rem;align-items:center;list-style:none;margin:0;padding:0}
+.nav__toggle{display:none}
+
+/* Hero */
+.hero{position:relative;padding:6rem 0 3rem}
+.hero__content h1{font-size:clamp(1.8rem,4vw,3rem);line-height:1.2;margin:0 0 .6rem}
+.hero .lead{color:var(--muted);max-width:60ch}
+.hero__cta{display:flex;gap:.8rem;margin-top:1rem}
+.btn{background:var(--brand);color:#091024;border:1px solid rgba(255,255,255,.1);padding:.7rem 1rem;border-radius:10px;font-weight:600;box-shadow:var(--shadow)}
+.btn--ghost{background:transparent;color:var(--text);border:1px solid var(--border)}
+.btn[aria-disabled="true"]{opacity:.6;pointer-events:none}
+.btn--sm{padding:.45rem .7rem;border-radius:8px}
+.meta{display:flex;gap:1rem;flex-wrap:wrap;color:var(--muted);padding:0;margin:1rem 0;list-style:none}
+.hero__wave{height:120px;background:radial-gradient(1200px 120px at 50% -20px,rgba(106,166,255,.25),transparent 70%),radial-gradient(800px 120px at 20% -30px,rgba(163,107,255,.25),transparent 70%)}
+
+/* Sections */
+.section{padding:4rem 0}
+.section--alt{background:var(--bg-alt);border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+.section h2{font-size:clamp(1.4rem,3vw,2rem);margin:.5rem 0 1rem}
+.section__intro{color:var(--muted)}
+
+/* Cards */
+.grid{display:grid;gap:1.2rem}
+@media(min-width:700px){.grid.cards{grid-template-columns:repeat(3,1fr)}}
+.card{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:1rem;position:relative;box-shadow:var(--shadow)}
+.card__badge{position:absolute;top:.8rem;right:.8rem;background:linear-gradient(135deg,var(--brand),var(--brand-2));color:#061022;font-size:.75rem;font-weight:700;padding:.25rem .5rem;border-radius:6px}
+.tags{display:flex;flex-wrap:wrap;gap:.4rem;list-style:none;padding:0;margin:.8rem 0 0}
+.tags li{background:#0b1022;border:1px solid var(--border);padding:.2rem .5rem;border-radius:999px;color:var(--muted);font-size:.8rem}
+
+/* Skills */
+.skills{display:grid;gap:1rem}
+@media(min-width:800px){.skills{grid-template-columns:repeat(3,1fr)}}
+.bullets{margin:.4rem 0 0;padding-left:1rem;color:var(--muted)}
+
+/* Timeline */
+.timeline{border-left:2px solid var(--border);padding-left:1rem}
+.timeline__item{margin:1rem 0 1.2rem}
+.when{display:inline-block;background:#0b1022;border:1px solid var(--border);border-radius:6px;color:var(--muted);padding:.2rem .5rem;margin-bottom:.3rem}
+
+/* Footer */
+.site-footer{border-top:1px solid var(--border);background:rgba(15,18,32,.6);backdrop-filter:blur(6px)}
+.footer__inner{display:flex;align-items:center;justify-content:space-between;padding:1rem 0}
+.to-top{color:var(--muted)}
+
+/* Mobile nav */
+@media(max-width:760px){
+  .nav__toggle{display:inline-block;background:transparent;border:1px solid var(--border);color:var(--text);padding:.4rem .6rem;border-radius:8px}
+  .nav__links{display:none;position:absolute;right:1rem;top:60px;background:var(--bg-alt);border:1px solid var(--border);border-radius:12px;padding:.8rem;width:min(220px,90vw);flex-direction:column}
+  .nav__links.open{display:flex}
+}
+
+/* Light theme */
+.light{--bg:#f6f7fb;--bg-alt:#ffffff;--text:#0f1220;--muted:#3e4761;--brand:#2457ff;--brand-2:#7a3dff;--card:#ffffff;--border:#e3e6f1}

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portfolio – Aurore Takouezim</title>
+  <meta name="description" content="Portfolio de Aurore Takouezim – Data & Web projects, expériences, compétences, contact." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
+</head>
+<body>
+  <header class="site-header" id="top">
+    <nav class="nav">
+      <a class="logo" href="#top">AT</a>
+      <button class="nav__toggle" aria-label="Menu" aria-expanded="false">☰</button>
+      <ul class="nav__links">
+        <li><a href="#projets">Projets</a></li>
+        <li><a href="#competences">Compétences</a></li>
+        <li><a href="#parcours">Parcours</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><button id="theme-toggle" class="btn btn--ghost" aria-label="Basculer le thème">🌙</button></li>
+      </ul>
+    </nav>
+    <section class="hero">
+      <div class="hero__content container">
+        <h1>Bonjour, je suis <span class="emph">Aurore Takouezim</span>.</h1>
+        <p class="lead">Ingénieure/Analyste orientée <strong>Data & Web</strong>, j'aime concevoir des solutions claires, mesurables et élégantes.</p>
+        <div class="hero__cta">
+          <a class="btn" href="#projets">Voir mes projets</a>
+          <a class="btn btn--ghost" href="https://github.com/auroretakouezim" target="_blank" rel="noreferrer">GitHub</a>
+        </div>
+        <ul class="meta">
+          <li>📍 Limoges, FR</li>
+          <li>📧 <a href="mailto:">email</a></li>
+          <li>🔗 <a href="https://www.linkedin.com" target="_blank" rel="noreferrer">LinkedIn</a></li>
+        </ul>
+      </div>
+      <div class="hero__wave" aria-hidden="true"></div>
+    </section>
+  </header>
+
+  <main>
+    <section id="projets" class="section container">
+      <h2>Projets sélectionnés</h2>
+      <p class="section__intro">Un aperçu de mes travaux. Chaque carte renvoie vers le code source ou une démo.</p>
+      <div class="grid cards">
+        <article class="card">
+          <div class="card__badge">ML</div>
+          <h3>ImmoStat – Prédiction de prix immobiliers</h3>
+          <p>ETL sur données open data, régression linéaire, API FastAPI, CI/CD GitHub Actions, déploiement Docker.</p>
+          <ul class="tags"><li>Python</li><li>FastAPI</li><li>Docker</li><li>CI/CD</li></ul>
+          <div class="card__links">
+            <a class="btn btn--sm" href="#" aria-disabled="true">Code</a>
+            <a class="btn btn--sm btn--ghost" href="#" aria-disabled="true">Demo</a>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card__badge">Web</div>
+          <h3>Dashboard KPI</h3>
+          <p>Tableau de bord responsive avec charts, filtrage client‑side et export.</p>
+          <ul class="tags"><li>HTML</li><li>JS</li><li>Chart</li></ul>
+          <div class="card__links">
+            <a class="btn btn--sm" href="#" aria-disabled="true">Code</a>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card__badge">Data</div>
+          <h3>Pipeline Data – Nettoyage & Features</h3>
+          <p>Pipeline reproductible avec validation, notebooks et documentation.</p>
+          <ul class="tags"><li>Python</li><li>Pandas</li><li>MLflow</li></ul>
+          <div class="card__links">
+            <a class="btn btn--sm" href="#" aria-disabled="true">Code</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="competences" class="section section--alt">
+      <div class="container">
+        <h2>Compétences</h2>
+        <div class="skills">
+          <div>
+            <h3>Data & ML</h3>
+            <ul class="bullets">
+              <li>Pandas, scikit‑learn</li>
+              <li>FastAPI, tests unitaires</li>
+              <li>CI/CD – GitHub Actions</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Back & Cloud</h3>
+            <ul class="bullets">
+              <li>Python, Node.js</li>
+              <li>Docker, Linux</li>
+              <li>AWS / GCP (bases)</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Front</h3>
+            <ul class="bullets">
+              <li>HTML5, CSS3, JS</li>
+              <li>Accessibilité et SEO</li>
+              <li>Responsive design</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="parcours" class="section container">
+      <h2>Parcours</h2>
+      <div class="timeline">
+        <div class="timeline__item">
+          <span class="when">2024–2025</span>
+          <h3>Master 2 – Machine Learning, Cloud & Data</h3>
+          <p>Hochschule Hannover (Erasmus).</p>
+        </div>
+        <div class="timeline__item">
+          <span class="when">2020–2025</span>
+          <h3>Diplôme d’ingénieur – Dev/DevOps</h3>
+          <p>Groupe 3iL, Limoges.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section section--alt">
+      <div class="container">
+        <h2>Contact</h2>
+        <p>Intéressé·e par une collaboration ? Écrivez‑moi.</p>
+        <div class="contact">
+          <a class="btn" href="mailto:">Me contacter</a>
+          <a class="btn btn--ghost" href="https://github.com/auroretakouezim" target="_blank" rel="noreferrer">Mon GitHub</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer__inner">
+      <p>© <span id="year"></span> Aurore Takouezim</p>
+      <a href="#top" class="to-top" aria-label="Retour en haut">↑</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
