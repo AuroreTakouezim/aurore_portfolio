@@ -10,6 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
   <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
   <header class="site-header" id="top">
@@ -25,17 +26,27 @@
         <li><button id="theme-toggle" class="btn btn--ghost" aria-label="Basculer le thème">🌙</button></li>
       </ul>
     </nav>
+    
     <section class="hero">
       <div class="hero__content container">
-        <h1><span class="emph">Aurore Takouezim</span></h1>
-        <h3 class="lead">Ingénieure Data Analyste & Business Intelligence </h3>
-        <p> Bienvenue sur mon portfolio </p>
-        <ul class="meta">
-          <li>📍 Limoges, France</li></br>
-          <li>📧 <a href="mailto:takouezim2003@gmail.com">takouezim2003@gmail.com</a></li></br>
-          <li>🔗 <a href="https://www.linkedin.com" target="_blank" rel="noreferrer">LinkedIn</a></li></br>
-          <li> <a href> Github</a></li></br>
-        </ul>
+        
+        <div class="hero__text">
+          <h1><span class="emph">Aurore Takouezim</span></h1>
+          <h3 class="lead">Ingénieure Data Analyste & Business Intelligence </h3>
+          <p> Bienvenue sur mon portfolio </p>
+            
+          <ul class=hero__infos">
+            <li><i class="fa-solid fa-location-dot"></i> Limoges, France</li>
+            <li><i class="fa-regular fa-envelope"></i> <a href="mailto:takouezim2003@gmail.com">Gmail</a></li>
+            <li><i class="fa-brands fa-linkedin"></i> <a href="www.linkedin.com/in/aurore-takouezim" target="_blank">LinkedIn</a></li>
+            <li><i class="fa-brands fa-github"></i> <a href="https://github.com/auroretakouezim" target="_blank"> Github</a></li>
+          </ul>
+      </div>
+
+      <!-- photo -->
+        <div class="hero__photo">
+          <img src "assets/img/aurore.jpg" alt="photo de aurore takouezim">
+        </div>
       </div>
       <div class="hero__wave" aria-hidden="true"></div>
     </section>
