@@ -28,6 +28,7 @@
     </nav>
     
     <section class="hero">
+    
       <div class="hero__content container">
         
         <div class="hero__text">
@@ -156,32 +157,49 @@
     
     <section id="projets" class="section container">
       <h2>Projets sélectionnés</h2>
-      <p class="section__intro">Un aperçu de mes travaux. Chaque carte renvoie vers le code source ou une démo.</p>
       <div class="grid cards">
         <article class="card">
-          <div class="card__badge">ML</div>
-          <h3>ImmoStat – Prédiction de prix immobiliers</h3>
-          <p>ETL sur données open data, régression linéaire, API FastAPI, CI/CD GitHub Actions, déploiement Docker.</p>
-          <ul class="tags"><li>Python</li><li>FastAPI</li><li>Docker</li><li>CI/CD</li></ul>
+          <div class="card__badge">Data analyst</div>
+          <h3>Analyse des prets bancaire des clients</h3>
+          <p>Identification des problemantiques business
+          Analyse et exploitation des donnees avec python
+          Utilisation de Power Query pour nettoyer les donnees
+          Utilisation de Power BI pour creer des tableaux de bord afin de suivre l'historique des prets</p>
+          <ul class="tags"><li>Python</li><li>Power BI</li><li>Power Query</li><li>Spyder</li></ul>
           <div class="card__links">
             <a class="btn btn--sm" href="#" aria-disabled="true">Code</a>
-            <a class="btn btn--sm btn--ghost" href="#" aria-disabled="true">Demo</a>
           </div>
         </article>
         <article class="card">
           <div class="card__badge">Web</div>
-          <h3>Dashboard KPI</h3>
-          <p>Tableau de bord responsive avec charts, filtrage client‑side et export.</p>
-          <ul class="tags"><li>HTML</li><li>JS</li><li>Chart</li></ul>
+          <h3>Application Shoplite (en cours)</h3>
+          <iframe
+                        width="400"
+                        height="400"
+                        src={project.video}
+                        title={project.title}
+                        frameBorder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowFullScreen
+                        className="w-full rounded-lg shadow-md"
+                        style={{ maxHeight: 240 }}
+                      />
+          <p>Site web de vente en ligne dynamique
+            Gestion des utilisateurs et des commandes </p>
+          <ul class="tags"><li>React.js</li><li>Node.js</li><li>Tailwind</li></ul>
           <div class="card__links">
             <a class="btn btn--sm" href="#" aria-disabled="true">Code</a>
           </div>
         </article>
         <article class="card">
-          <div class="card__badge">Data</div>
-          <h3>Pipeline Data – Nettoyage & Features</h3>
-          <p>Pipeline reproductible avec validation, notebooks et documentation.</p>
-          <ul class="tags"><li>Python</li><li>Pandas</li><li>MLflow</li></ul>
+          <div class="card__badge">Data science</div>
+          <h3>Conception et optimisation de pipeline ETL pour automatiser l'integration de donnees agricole</h3>
+          <p> Developpement de pipeline de traintement et d'ingestion des donnees
+            Automatisation du nettoyage et de la transformation des donnees
+            optimisation des performances des flux de donnees
+            Creation de tableau de bord pour une prise de decision suite aux analyses
+          </p>
+          <ul class="tags"><li>Spark</li><li>Kafka</li><li>Hadoop</li><li>Power BI</li></ul>
           <div class="card__links">
             <a class="btn btn--sm" href="#" aria-disabled="true">Code</a>
           </div>
@@ -195,43 +213,33 @@
         <div class="skills">
           <div>
             <h3>Langages de programmation </h3>
-            <ul class="bullets">
-              <li>Python, SQL, R, SAS, VBA</li>
-              <li>HTML, CSS, PHP, Java</li>
-            </ul>
+              <p class="when">Python </p><p class="when">SQL</p><p class="when">R</p><p class="when">SAS</p><p class="when">VBA</p>
+              <p class="when">HTML</p><p class="when">CSS</p><p class="when">PHP</p><p class="when">Java</p>
           </div>
           <div>
             <h3>Outils de reporting</h3>
-            <ul class="bullets">
-              <li> Power BI</li>
-              <li>Tableau</li>
-              <li> Excel</li>
-            </ul>
+              <p class="when"> Power BI</p>
+              <p class="when">Tableau</p>
+              <p class="when"> Excel</p>
           </div>
           <div>
             <h3>Bases de données</h3>
-            <ul class="bullets">
-              <li> MySQL</li>
-              <li>SQLite</li>
-              <li>MongoDB</li>
-              <li>PostgreSQL</li>
-            </ul>
+              <p class="when"> MySQL</p>
+              <p class="when">SQLite</p>
+              <p class="when">MongoDB</p>
+              <p class="when">PostgreSQL</p>
           </div>
           <div>
             <h3>Big Data & IA </h3>
-            <ul class="bullets">
-              <li>Hadoop</li>
-              <li>Spark</li>
-              <li>Machine learning</li>
-              <li>RAG</li>
-            </ul>
+              <p class="when">Hadoop</p>
+              <p class="when">Spark</p>
+              <p class="when">Machine learning</p>
+              <p class="when">RAG</p>
           </div>
           <div>
             <h3>Frameworks </h3>
-            <ul class="bullets">
-              <li> React.js</li>
-              <li>Angular</li>
-            </ul>
+              <p class="when"> React.js</p>
+              <p class="when">Angular</p>
           </div>
           <div>
             <h3>outils de gestion de projet et de bureautique</h3>
@@ -252,7 +260,7 @@
         <div class="timeline__item">
           <h3>Ingenierie en informatique - Developpement, Big Data & BI</h3>
           <p>3IL Ingenieurs</p>
-          <span class="when">2023–Ajourd'hui</span>
+          <span>2023–Ajourd'hui</span>
           <p><i class="fa-solid fa-location-dot"></i> Limoges, France</p>
           <p>Big Data, Data mining, Statistiques, gestion de projets, Business intelligence, dev pro & ux-ui</p>
         </div>
@@ -260,7 +268,7 @@
         <div class="timeline__item">
            <h3>Classe préparatoire en informatique</h3>
           <p>Institut universitaire de la cote</p>
-          <span class="when">2021–2023</span>
+          <span>2021–2023</span>
           <p><i class="fa-solid fa-location-dot"></i> Douala, Cameroun </p>
          <p>Informatique, Science de l'ingenieur, Marketing, Management</p>
         </div>
