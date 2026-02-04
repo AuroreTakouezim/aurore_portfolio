@@ -84,7 +84,7 @@ a{color:var(--brand);text-decoration:none}
 .experience__list {margin: 0.6rem 0 0.8rem;padding-left: 1.2rem;}
 .experience__list li {margin-bottom: 0.4rem;color: var(--text);}
 .experience__tools {margin-top: 0.8rem;font-size: 0.85rem;color: var(--muted);}
-.experience-timeline {position: relative;margin-top: 2rem;padding-left: 2.5rem;}
+.experience-timeline {display:flex;flex-direction:column;gap:2.5rem;position: relative;margin-top: 2rem;padding-left: 2.5rem;}
 .experience-timeline::before {content: "";position: absolute;left: 10px;top: 0;bottom: 0;width: 2px;background: linear-gradient(to bottom,transparent,var(--brand),transparent);}
 .experience-item {position: relative;display:flex;flex-direction:column;gap:2rem;width:100%;}
 .experience-card {margin-left:auto;margin-right:auto;background: radial-gradient(120% 120% at top left,rgba(106,166,255,0.12),transparent 40%),var(--card); border: 1px solid var(--border);border-radius: 18px; padding: 1.5rem;box-shadow: var(--shadow);max-width:900px}
