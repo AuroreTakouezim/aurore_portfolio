@@ -147,6 +147,18 @@ a{color:var(--brand);text-decoration:none}
 .timeline{border-left:2px solid var(--border);padding-left:1rem}
 .timeline__item{margin:1rem 0 1.2rem}
 .when{display:inline-block;background:#0b1022;border:1px solid var(--border);border-radius:6px;color:var(--muted);padding:.2rem .5rem;margin-bottom:.3rem}
+.timeline__content {background: var(--card);border: 1px solid var(--border);border-radius: 14px;padding: 1.4rem 1.6rem;box-shadow: var(--shadow);}
+.timeline__content h3 {margin: 0;font-size: 1.05rem;font-weight: 600;}
+.timeline__content h4 {margin: 0.2rem 0 0.8rem;font-size: 0.9rem;font-weight: 500;color: var(--muted);}
+.timeline__meta {display: flex;flex-wrap: wrap; gap: 0.8rem 1.2rem;font-size: 0.85rem;color: var(--muted); margin-bottom: 0.8rem;}
+.timeline__meta i {margin-right: 0.3rem; opacity: 0.8;}
+.timeline__skills {
+  font-size: 0.85rem;
+  line-height: 1.5;
+  color: var(--text);
+  opacity: 0.9;
+}
+
 
 /* Footer */
 .site-footer{border-top:1px solid var(--border);background:rgba(15,18,32,.6);backdrop-filter:blur(6px)}
