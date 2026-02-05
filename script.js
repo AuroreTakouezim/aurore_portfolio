@@ -26,3 +26,19 @@ if (btnTheme) {
     btnTheme.textContent = document.body.classList.contains('light') ? '🌞' : '🌙';
   });
 }
+
+<script>
+const links = document.querySelectorAll('.nav__links a');
+const sections = [...links].map(l => document.querySelector(l.getAttribute('href')));
+
+window.addEventListener('scroll', () => {
+  const y = window.scrollY + 120;
+  sections.forEach((sec, i) => {
+    if (sec.offsetTop <= y && sec.offsetTop + sec.offsetHeight > y) {
+      links.forEach(l => l.classList.remove('active'));
+      links[i].classList.add('active');
+    }
+  });
+});
+</script>
+
