@@ -11,19 +11,6 @@ if (navToggle) {
     navToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
   });
 }
-//////////////////////////////
-const links = document.querySelectorAll('.nav__links a');
-const sections = [...links].map(l => document.querySelector(l.getAttribute('href')));
-
-window.addEventListener('scroll', () => {
-  const y = window.scrollY + 120;
-  sections.forEach((sec, i) => {
-    if (sec.offsetTop <= y && sec.offsetTop + sec.offsetHeight > y) {
-      links.forEach(l => l.classList.remove('active'));
-      links[i].classList.add('active');
-    }
-  });
-});
 
 // Theme toggle (dark/light)
 const btnTheme = document.getElementById('theme-toggle');
