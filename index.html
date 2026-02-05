@@ -18,11 +18,11 @@
       <a class="logo" href="#top">AT</a>
       <button class="nav__toggle" aria-label="Menu" aria-expanded="false">☰</button>
       <ul class="nav__links">
-        <li><a href="#experiences">💼 Expériences</a></li>
-        <li><a href="#projets">📊 Projets</a></li>
-        <li><a href="#competences">🧠 Compétences</a></li>
-        <li><a href="#parcours">🎓 Parcours</a></li>
-        <li><a href="#contact">✉️ Contact</a></li>
+        <li><a href="#experiences"><i class="fa-solid fa-briefcase"></i> Expériences</a></li>
+        <li><a href="#projets"><i class="fa-solid fa-chart-line"></i> Projets</a></li>
+        <li><a href="#competences"><i class="fa-solid fa-brain"></i> Compétences</a></li>
+        <li><a href="#parcours"><i class="fa-solid fa-graduation-cap"></i> Parcours</a></li>
+        <li><a href="#contact"><i class="fa-solid fa-envelope"></i> Contact</a></li>
         <li><button id="theme-toggle" class="btn btn--ghost" aria-label="Basculer le thème">🌙</button></li>
       </ul>
     </nav>
@@ -75,7 +75,7 @@
     <section id="experiences" class="section">
       <div class="experience-card">
         <div class="container">
-      <h2> 💼 Expériences professionnelles</h2>
+      <h2><i class="fa-solid fa-briefcase"></i> Expériences professionnelles</h2>
         <div class="experience-timeline">
           
           <!-- alternance 3dceram -->
@@ -146,7 +146,7 @@
     </section>
     
     <section id="projets" class="section container">
-      <h2>📊 Projets sélectionnés</h2>
+      <h2><i class="fa-solid fa-chart-line"></i> Projets sélectionnés</h2>
       <div class="grid cards">
         <article class="card">
           <div class="card__badge">Data analyst</div>
@@ -190,7 +190,7 @@
 
     <section id="competences" class="section section--alt">
       <div class="container">
-        <h2>🧠 Compétences</h2>
+        <h2><i class="fa-solid fa-brain"></i> Compétences</h2>
         <div class="skills">
           <div class="when">
             <h3>Langages de programmation </h3>
@@ -235,7 +235,7 @@
     </section>
 
     <section id="parcours" class="section container">
-      <h2 class="section-title">🎓 Parcours</h2>
+      <h2 class="section-title"><i class="fa-solid fa-graduation-cap"></i>Parcours</h2>
       <div class="timeline">
 
         <div class="timeline__item">
@@ -264,36 +264,46 @@
     </div>
     </section>
 <!-- Section certification -->
-    <section id="Certification" class="section container">
-      <h2>🎓 Certification</h2>
-
-        <div class="when">
-          <a href="#">Data science & Machine learning </a>
-        </div>
-        
-        <div class="when">
-           <a href="#">Python pour l'analyse de donnee </a>
-        </div>
-      <div class="when">
-           <a href="#">Gerer du code avec Git et Github </a>
-        </div>
-        
-    </section>
-
-    <section id="contact" class="section section--alt">
-      <div class="container">
-        <h2>Contact</h2>
-        <p>
-          Intéressé·e par mon profil ? n'hesitez pas a me contacter
-          Je suis ouverte aux opportunités et aux échanges professionnels.
-        </p>
-        <div class="contact">
-          <a class="btn" href="mailto:takouezim2003@gmail.com">Me contacter</a>
-          <p>06 65 11 51 02</p>
-          <a class="btn btn--ghost" href="https://github.com/auroretakouezim" target="_blank" rel="noreferrer">Mon GitHub</a>
-        </div>
+    <section id="certifications" class="section">
+      <h2>🎓 Certifications</h2>
+    
+      <div class="certifications">
+        <a href="certifs/data-science.pdf" target="_blank" class="cert-card">
+          <img src="assets/img/udemy.png" alt="Udemy logo">
+          <div>
+            <h3>Data Science & Machine Learning</h3>
+            <p>Udemy · 2024</p>
+          </div>
+        </a>
+    
+        <a href="certifs/python-analyse.pdf" target="_blank" class="cert-card">
+          <img src="assets/img/udemy.png" alt="Udemy logo">
+          <div>
+            <h3>Python pour l’analyse de données</h3>
+            <p>Udemy · 2023</p>
+          </div>
+        </a>
       </div>
-    </section>
+</section>
+
+    <!-- Section contact -->
+<section id="contact" class="section section--alt">
+  <h2><i class="fa-solid fa-envelope"></i> Contact</h2>
+
+  <p>
+    Intéressé·e par mon profil ?  
+    N’hésitez pas à me laisser un message.
+  </p>
+
+  <form class="contact-form" action="https://formspree.io/f/XXXXXXX" method="POST">
+    <input type="text" name="name" placeholder="Votre nom" required>
+    <input type="email" name="email" placeholder="Votre email" required>
+    <textarea name="message" rows="5" placeholder="Votre message" required></textarea>
+    <button class="btn">Envoyer</button>
+  </form>
+</section>
+
+    
   </main>
 
   <footer class="site-footer">
