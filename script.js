@@ -21,16 +21,9 @@ else if (prefersLight) document.body.classList.add('light');
 
 if (btnTheme) {
   const icon = btnTheme.querySelector('i');
-
-  btnTheme.addEventListener('click', () => {
-    document.body.classList.toggle('light');
-
-    const isLight = document.body.classList.contains('light');
-    localStorage.setItem('theme', isLight ? 'light' : 'dark');
-
-    icon.classList.toggle('fa-moon', !isLight);
-    icon.classList.toggle('fa-sun', isLight);
-  });
+  const isLight = document.body.classList.contains('light');
+  icon.classList.toggle('fa-sun', isLight);
+  icon.classList.toggle('fa-moon', !isLight);
 }
 
 // Rendre la navbar active
