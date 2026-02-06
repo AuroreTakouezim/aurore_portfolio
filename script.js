@@ -20,11 +20,39 @@ if (saved) document.body.classList.toggle('light', saved === 'light');
 else if (prefersLight) document.body.classList.add('light');
 
 if (btnTheme) {
+  const icon = btnTheme.querySelector('i');
+
   btnTheme.addEventListener('click', () => {
     document.body.classList.toggle('light');
-    localStorage.setItem('theme', document.body.classList.contains('light') ? 'light' : 'dark');
-    btnTheme.textContent = document.body.classList.contains('light') ? '🌞' : '🌙';
+
+    const isLight = document.body.classList.contains('light');
+    localStorage.setItem('theme', isLight ? 'light' : 'dark');
+
+    icon.classList.toggle('fa-moon', !isLight);
+    icon.classList.toggle('fa-sun', isLight);
   });
 }
+
+// Rendre la navbar active
+const navLinks = document.querySelectorAll('.nav__links a[href^="#"]');
+const sections = Array.from(navLinks)
+  .map(link => document.querySelector(link.getAttribute('href')))
+  .filter(Boolean);
+
+window.addEventListener('scroll', () => {
+  const scrollPos = window.scrollY + 160;
+
+  sections.forEach((section, index) => {
+    if (
+      section.offsetTop <= scrollPos &&
+      section.offsetTop + section.offsetHeight > scrollPos
+    ) {
+      navLinks.forEach(link => link.classList.remove('active'));
+      navLinks[index].classList.add('active');
+    }
+  });
+});
+
+
 
 
