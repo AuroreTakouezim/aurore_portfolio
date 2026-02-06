@@ -13,8 +13,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
-  <header class="site-header" id="top">
-    <nav class="nav">
+  <nav class="nav">
       <a class="logo" href="#top">AT</a>
       <button class="nav__toggle" aria-label="Menu" aria-expanded="false">☰</button>
       <ul class="nav__links">
@@ -23,9 +22,11 @@
         <li><a href="#competences"><i class="fa-solid fa-brain"></i> Compétences</a></li>
         <li><a href="#parcours"><i class="fa-solid fa-graduation-cap"></i> Parcours</a></li>
         <li><a href="#contact"><i class="fa-solid fa-envelope"></i> Contact</a></li>
-        <li><button id="theme-toggle" class="btn btn--ghost" aria-label="Basculer le thème">🌙</button></li>
+        <li><button id="theme-toggle" class="btn btn--ghost" aria-label="Basculer le thème"><i class="fa-solid fa-moon"></i></button></li>
       </ul>
     </nav>
+  <header class="site-header" id="top">
+    
     
     <section class="hero">
     
@@ -83,15 +84,17 @@
               <p class="experience-meta"> 3DCERAM SINTO · Limoges, France</p>
               <span class="experience-date">Sept. 2025 – Aujourd'hui</span>
               <div class="experience-box">
-                <h4>📌 Réalisations clés</h4>
-                <ul>
-                   <li> Développement d'un script python pour la conversion automatique des documents word vers markdown et les importés en tant que page </li>
-                   <li> Définition des ateliers de test (Wiki.js, Bookstack) avec les parties prenantes internes </li>
-                   <li> Déploiement de la solution en environnement et configuration de son infrastrucuture de sécurité </li>
-                   <li> Intéfration de la documentation existante dans la base de connaissance </li>
-                   <li>Formation des utilisateurs finaux et accompagnement à la prise en main </li>
-                   <li> Rédaction de la documentation technique et utilisateur des processus mis en place </li>
-                </ul>
+                <details class="experience-box">
+                <summary>📌 Réalisations clés</summary>
+                  <ul>
+                     <li> Développement d'un script python pour la conversion automatique des documents word vers markdown et les importés en tant que page </li>
+                     <li> Définition des ateliers de test (Wiki.js, Bookstack) avec les parties prenantes internes </li>
+                     <li> Déploiement de la solution en environnement et configuration de son infrastrucuture de sécurité </li>
+                     <li> Intéfration de la documentation existante dans la base de connaissance </li>
+                     <li>Formation des utilisateurs finaux et accompagnement à la prise en main </li>
+                     <li> Rédaction de la documentation technique et utilisateur des processus mis en place </li>
+                  </ul>
+                </details>
                 <p class="experience__tools"> <strong>Outils utilisés :</strong> Python · Markdown · wiki/base de connaissance · Putty · Serveur linux · office 365 </p>
               </div>
           <!-- stage 3dceram -->
