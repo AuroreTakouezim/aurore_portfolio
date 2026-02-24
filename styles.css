@@ -129,4 +129,4 @@ details[open] summary {  color: var(--brand);}
 }
 
 /* Light theme */
-.light{--bg:#f6f7fb;--bg-alt:#ffffff;--text:#0f1220;--muted:#3e4761;--brand:#2457ff;--brand-2:#7a3dff;--card:#ffffff;--border:#e3e6f1}
+.light{--bg:#f4f6fb;--bg-alt:#ffffff;--text:#1a1f36;--muted:#5b647d;--brand:#3b6cff;--brand-2:#8b5cf6;--card:#ffffff;--border:#e6e9f2;--shadow: 0 8px 25px rgba(0,0,0,.08);}
