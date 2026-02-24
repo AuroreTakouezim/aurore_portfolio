@@ -129,4 +129,14 @@ details[open] summary {  color: var(--brand);}
 }
 
 /* Light theme */
-.light{--bg:#f4f6fb;--bg-alt:#ffffff;--text:#1a1f36;--muted:#5b647d;--brand:#3b6cff;--brand-2:#8b5cf6;--card:#ffffff;--border:#e6e9f2;--shadow: 0 8px 25px rgba(0,0,0,.08);}
+.light{--bg: #f5f9ff;--bg-alt: #ffffff;--text: #1b2a4a;--muted: #5c6f91; --brand: #2563eb;--brand-2: #3b82f6;--card: #ffffff;--border: #e3eaf5;--shadow: 0 8px 25px rgba(37, 99, 235, 0.08);}
+body.light {background: linear-gradient(180deg,#f5f9ff 0%,#eef4ff 50%,#f5f9ff 100%);}
+body.light .nav {background: rgba(255, 255, 255, 0.9);border-bottom: 1px solid var(--border);}
+body.light .section--alt {background: #eef4ff;}
+body.light .card,
+body.light .experience,
+body.light .timeline__content,
+body.light .cert-card {background: white;border: 1px solid var(--border);box-shadow: var(--shadow);}
+
+
+
