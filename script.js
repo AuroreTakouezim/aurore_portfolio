@@ -16,36 +16,33 @@ if (navToggle) {
 const btnTheme = document.getElementById('theme-toggle');
 const prefersLight = window.matchMedia('(prefers-color-scheme: light)').matches;
 const saved = localStorage.getItem('theme');
-if (saved) document.body.classList.toggle('light', saved === 'light');
-else if (prefersLight) document.body.classList.add('light');
+
+if (saved) {
+  document.body.classList.toggle('light', saved === 'light');
+} else if (prefersLight) {
+  document.body.classList.add('light');
+}
 
 if (btnTheme) {
   const icon = btnTheme.querySelector('i');
-  const isLight = document.body.classList.contains('light');
-  icon.classList.toggle('fa-sun', isLight);
-  icon.classList.toggle('fa-moon', !isLight);
-}
 
-// Rendre la navbar active
-const navLinks = document.querySelectorAll('.nav__links a[href^="#"]');
-const sections = Array.from(navLinks)
-  .map(link => document.querySelector(link.getAttribute('href')))
-  .filter(Boolean);
+  // Fonction pour mettre à jour l’icône
+  const updateIcon = () => {
+    const isLight = document.body.classList.contains('light');
+    icon.classList.toggle('fa-sun', isLight);
+    icon.classList.toggle('fa-moon', !isLight);
+  };
 
-window.addEventListener('scroll', () => {
-  const scrollPos = window.scrollY + 160;
+  updateIcon();
 
-  sections.forEach((section, index) => {
-    if (
-      section.offsetTop <= scrollPos &&
-      section.offsetTop + section.offsetHeight > scrollPos
-    ) {
-      navLinks.forEach(link => link.classList.remove('active'));
-      navLinks[index].classList.add('active');
-    }
+  btnTheme.addEventListener('click', () => {
+    document.body.classList.toggle('light');
+
+    const isLight = document.body.classList.contains('light');
+    localStorage.setItem('theme', isLight ? 'light' : 'dark');
+
+    updateIcon();
   });
-});
-
-
+}
 
 
