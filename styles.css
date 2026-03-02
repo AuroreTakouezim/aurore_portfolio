@@ -118,7 +118,7 @@ details[open] summary {  color: var(--brand);}
 
 /* Footer */
 .site-footer{border-top:1px solid var(--border);background:rgba(15,18,32,.6);backdrop-filter:blur(6px)}
-.footer__inner{display:flex;align-items:center;justify-content:space-between;padding:1rem 0}
+.footer__inner{display:flex;align-items:center;justify-content:space-between;padding:0.8rem 0}
 .to-top{color:var(--muted)}
 
 /* Mobile nav */
@@ -142,5 +142,5 @@ body.light .skills .card {  background: white;  border: 1px solid var(--border);
 body.light .tags li, body.light .when, body.light .skills span, body.light .skills li {  background: #eef4ff;  color: var(--brand);  border: 1px solid #dbe7ff;}
 body.light .contact-form input, body.light .contact-form textarea {  background: white; border: 1px solid var(--border); color: var(--text);}
 body.light .contact-form input:focus,body.light .contact-form textarea:focus {  outline: none;  border-color: var(--brand);  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);}
-
-
+body.light footer { background: #eaf2ff; border-top: 1px solid #dbe7ff;}
+body.light .back-to-top {color: var(--brand);  background: white; border: 1px solid #dbe7ff; border-radius: 50%; padding: 0.4rem; box-shadow: 0 4px 10px rgba(0,0,0,0.05);}
