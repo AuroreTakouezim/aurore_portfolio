@@ -139,8 +139,7 @@ body.light .timeline__content,
 body.light .cert-card {background: white;border: 1px solid var(--border);box-shadow: var(--shadow);}
 body.light .skills > div,
 body.light .skills .card {  background: white;  border: 1px solid var(--border);  box-shadow: var(--shadow);}
-body.light .tags li, body.light .skills span, body.light .skills li {  background: #eef4ff;  color: var(--brand);  border: 1px solid #dbe7ff;}
-/* Formulaire en mode clair */
+body.light .tags li, body.light .when, body.light .skills span, body.light .skills li {  background: #eef4ff;  color: var(--brand);  border: 1px solid #dbe7ff;}
 body.light .contact-form input, body.light .contact-form textarea {  background: white; border: 1px solid var(--border); color: var(--text);}
 body.light .contact-form input:focus,body.light .contact-form textarea:focus {  outline: none;  border-color: var(--brand);  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);}
 
