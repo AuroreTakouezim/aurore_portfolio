@@ -133,14 +133,13 @@ details[open] summary {  color: var(--brand);}
 body.light {background: linear-gradient(180deg,#f5f9ff 0%,#eef4ff 50%,#f5f9ff 100%);}
 body.light .nav {background: rgba(255, 255, 255, 0.9);border-bottom: 1px solid var(--border);}
 body.light .section--alt {background: #eef4ff;}
-body.light .card,
-body.light .experience,
-body.light .timeline__content,
-body.light .cert-card {background: white;border: 1px solid var(--border);box-shadow: var(--shadow);}
+body.light .card, body.light .experience, body.light .timeline__content, body.light .cert-card {background: white;border: 1px solid var(--border);box-shadow: var(--shadow);}
 body.light .skills > div,
 body.light .skills .card {  background: white;  border: 1px solid var(--border);  box-shadow: var(--shadow);}
+body.light .skills h3, body.light .skills h4, body.light .skills p, body.light .skills span, body.light .skills li{color: #111;}
 body.light .tags li, body.light .when, body.light .skills span, body.light .skills li {  background: #eef4ff;  color: var(--brand);  border: 1px solid #dbe7ff;}
 body.light .contact-form input, body.light .contact-form textarea {  background: white; border: 1px solid var(--border); color: var(--text);}
 body.light .contact-form input:focus,body.light .contact-form textarea:focus {  outline: none;  border-color: var(--brand);  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);}
 body.light footer { background: #eaf2ff; border-top: 1px solid #dbe7ff;}
 body.light .back-to-top {color: var(--brand);  background: white; border: 1px solid #dbe7ff; border-radius: 50%; padding: 0.4rem; box-shadow: 0 4px 10px rgba(0,0,0,0.05);}
+body.light .btn btn--sm .card__badge { background: #3c7ae6;}
