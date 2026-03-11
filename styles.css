@@ -1,3 +1,6 @@
+/* ═══════════════════════════════════════════════
+   DESIGN TOKENS
+═══════════════════════════════════════════════ */
 :root {
   --bg:        #07091a;
   --bg2:       #0c0f22;
@@ -189,9 +192,7 @@ button { cursor:pointer; font-family:var(--fb) }
 
 /* photo */
 .hero__photo-wrap { display:flex; justify-content:center; align-items:center; position:relative }
-.hero__ring {
-  position:relative; width:240px; height:240px;
-}
+.hero__ring { position:relative; width:240px; height:240px }
 .hero__ring::before {
   content:''; position:absolute; inset:-3px; border-radius:50%;
   background:conic-gradient(from 0deg,var(--brand),var(--brand2),var(--accent),var(--brand));
@@ -278,7 +279,6 @@ button { cursor:pointer; font-family:var(--fb) }
   background:linear-gradient(to bottom,var(--brand),var(--brand2),transparent);
   border-radius:2px;
 }
-.exp-dot-wrap { position:absolute; left:0; top:1.4rem }
 .exp-entry { position:relative }
 .exp-dot {
   position:absolute; left:-3rem; top:1.4rem;
