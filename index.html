@@ -13,312 +13,489 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
-  <nav class="nav">
-      <a class="logo" href="#top">AT</a>
-      <button class="nav__toggle" aria-label="Menu" aria-expanded="false">☰</button>
-      <ul class="nav__links">
-        <li><a href="#experiences"><i class="fa-solid fa-briefcase"></i> Expériences</a></li>
-        <li><a href="#projets"><i class="fa-solid fa-chart-line"></i> Projets</a></li>
-        <li><a href="#competences"><i class="fa-solid fa-brain"></i> Compétences</a></li>
-        <li><a href="#parcours"><i class="fa-solid fa-graduation-cap"></i> Formation & Certifications</a></li>
-        <li><a href="#contact"><i class="fa-solid fa-envelope"></i> Contact</a></li>
-        <li><button id="theme-toggle" class="btn btn--ghost" aria-label="Basculer le thème"><i class="fa-solid fa-moon"></i></button></li>
-      </ul>
-    </nav>
-  <header class="site-header" id="top">
-    
-    
-    <section class="hero">
-    
-      <div class="hero__content container">
-        
-        <div class="hero__text">
-          <h1><span class="emph">Aurore Takouezim</span></h1>
-          <h3 class="lead">Ingénieure Data Analyste/Business Analyst </h3>
-          <p> Bienvenue sur mon portfolio </p>
-            
-          <ul class="hero__infos">
-            <li><i class="fa-solid fa-location-dot"></i> Limoges, France</li>
-            <li><i class="fa-regular fa-envelope"></i> <a href="mailto:takouezim2003@gmail.com">Gmail</a></li>
-            <li><i class="fa-brands fa-linkedin"></i> <a href="www.linkedin.com/in/aurore-takouezim" target="_blank">LinkedIn</a></li>
-            <li><i class="fa-brands fa-github"></i> <a href="https://github.com/auroretakouezim" target="_blank"> Github</a></li>
-          </ul>
-      </div>
+ <body>
 
-      <!-- photo -->
-        <div class="hero__photo">
-          <img src="assets/photo profil.jpg" alt="photo de aurore takouezim">
+<canvas id="bg-canvas" aria-hidden="true"></canvas>
+
+<!-- ══════ NAV ══════ -->
+<nav class="nav" id="top">
+  <a class="logo" href="#top" aria-label="Haut de page">AT</a>
+  <button class="nav__toggle btn-icon" aria-label="Menu" aria-expanded="false">
+    <i class="fa-solid fa-bars"></i>
+  </button>
+  <ul class="nav__links">
+    <li><a href="#experiences"><i class="fa-solid fa-briefcase"></i> Expériences</a></li>
+    <li><a href="#projets"><i class="fa-solid fa-chart-line"></i> Projets</a></li>
+    <li><a href="#competences"><i class="fa-solid fa-brain"></i> Compétences</a></li>
+    <li><a href="#parcours"><i class="fa-solid fa-graduation-cap"></i> Formation</a></li>
+    <li><a href="#contact"><i class="fa-solid fa-envelope"></i> Contact</a></li>
+  </ul>
+  <button id="theme-toggle" class="btn-icon" aria-label="Basculer le thème">
+    <i class="fa-solid fa-moon"></i>
+  </button>
+</nav>
+
+<!-- ══════ HERO ══════ -->
+<header>
+<section class="hero" id="hero">
+  <div class="container">
+    <div class="hero__grid">
+      <div class="hero__text">
+        <h1>Aurore Takouezim</h1>
+        <p class="hero__role">Ingénieure Data Analyste · Business Analyst</p>
+        <p class="hero__bio">
+          Spécialisée en <strong>Big Data &amp; Business Intelligence</strong>, je transforme des données brutes
+          en insights actionnables et en tableaux de bord qui guident la décision. Rigoureuse, analytique, orientée impact. </p>
+        <div class="hero__pills">
+          <a href="#" class="hero__pill"><i class="fa-solid fa-location-dot"></i> Limoges, France</a>
+          <a href="mailto:takouezim2003@gmail.com" class="hero__pill"><i class="fa-regular fa-envelope"></i> Gmail</a>
+          <a href="https://www.linkedin.com/in/aurore-takouezim" target="_blank" class="hero__pill"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+          <a href="https://github.com/auroretakouezim" target="_blank" class="hero__pill"><i class="fa-brands fa-github"></i> GitHub</a>
+        </div>
+        <div class="hero__cta">
+          <a href="#contact" class="btn btn--primary"><i class="fa-solid fa-paper-plane"></i> Me contacter</a>
+          <a href="#projets" class="btn btn--outline"><i class="fa-solid fa-folder-open"></i> Mes projets</a>
         </div>
       </div>
-      <div class="hero__wave" aria-hidden="true"></div>
-    </section>
-    
-    <section id="presentation" class="section section--accent">
-      <div class="container">
-        <div class="intro">
-           <h2> À propos </h2>
-          <p> 
-              Je m’appelle Aurore Takouezim et je suis actuellement étudiante en 
-              <strong>3ᵉ année de cycle ingénieur informatique (niveau Master 2)</strong>, 
-              avec une spécialisation en <strong>Big Data & Business Intelligence</strong>.</br></br>
-    
-              Spécialisée dans l’analyse, la visualisation et la valorisation des données, j’aime transformer des données brutes en tableaux de bord clairs,
-              en insights actionnables et en recommandations utiles pour soutenir la prise de décision. </br></br>
-              
-              Rigoureuse, analytique et guidée par la compréhension des enjeux métier, je conçois des solutions data fiables, 
-              documentées et adaptées aussi bien aux besoins opérationnels que stratégiques.        </br></br>
-              
-              Ce portfolio présente mon parcours, mes projets et ma manière de travailler. 
-              Je t’invite à le parcourir.
-          </p>
+
+      <div class="hero__photo-wrap">
+        <div class="hero__ring">
+          <img src="assets/photo profil.jpg" alt="Photo d'Aurore Takouezim"
+               onerror="this.style.display='none';this.nextElementSibling.style.display='grid'">
+          <div class="photo-ph"><i class="fa-solid fa-user"></i></div>
         </div>
       </div>
-    </section>
-  </header>
-
-  <main>
-    <section id="experiences" class="section section--alt">
-       <div class="container">
-          <h2><i class="fa-solid fa-briefcase"></i> Expériences professionnelles</h2>
-        <div class="experience-timeline">
-          
-          <!-- alternance 3dceram -->
-              <h3>Alternante ingénieure informatique  </h3>
-              <p class="experience-meta"> 3DCERAM SINTO · Limoges, France</p>
-              <span class="experience-date">Sept. 2025 – Aujourd'hui</span>
-              <div class="experience-box">
-                <details class="experience-box">
-                  <summary>📌 Réalisations clés</summary>
-                  <p> Dans le cadre de mon alternance, j’interviens sur la <strong> choix et le déploiement d’une base de connaissance</strong> destinée à centraliser et fiabiliser la 
-                  documentation technique de l’entreprise.</p>
-                  <p>J’ai développé un script Python permettant la conversion automatique de documents Word en Markdown, facilitant ainsi leur intégration et leur mise à jour dans la solution retenue.</p>
-                  <p>En collaboration avec les équipes internes, j’ai participé à la définition et à l’animation d’ateliers de test afin de comparer plusieurs outils de documentation (Wiki.js, Bookstack) et d’orienter le choix 
-                  vers une solution adaptée aux usages.</p>
-                  <p>J’ai également assuré le déploiement de la solution en environnement serveur, incluant la configuration des aspects sécurité et réseau, ainsi que l’intégration progressive de la documentation existante.</p>
-                  <p>Enfin, j’ai accompagné les utilisateurs finaux à travers des sessions de prise en main et rédigé une documentation technique et utilisateur afin de garantir l’autonomie et la pérennité de la solution.</p>
-                </details>
-                <p class="experience__tools"> <strong>Outils utilisés :</strong> Python · Markdown · wiki/base de connaissance · Putty · Serveur linux · office 365 </p>
-              </div>
-          <!-- stage 3dceram -->
-              <h3> stagiaire ingénieure informatique</h3>
-              <p class="experience-meta">3DCERAM SINTO · Limoges, France</p>
-              <span class="experience-date">avril 2025 - aout 2025</span>
-              <div class="experience-box">
-                <details class="experience-box">
-                  <summary> 📌 Réalisations clés</summary>
-                  <p>Lors de ce stage, j’ai contribué à la <strong>structuration d’un projet de base de connaissance</strong> visant à améliorer la gestion et la diffusion de l’information chez les clients et au sein de l’entreprise.</p>
-                  <p>Mon travail a débuté par une analyse des processus internes et un recueil des besoins des utilisateurs, afin d’identifier les enjeux, les usages attendus et les contraintes. </p>
-                  <p>À partir de ces éléments, j’ai participé à la rédaction du cahier des charges et à la définition des objectifs fonctionnels et techniques de la solution. </p>
-                  <p>J’ai ensuite mené une étude comparative de plusieurs solutions de gestion de documentation (Wiki.js, Bookstack, Confluence Data Center, XWiki), en m’appuyant sur des critères d’ergonomie, de fonctionnalités et d’adéquation aux besoins métier.</p>
-                  <p>Enfin, j’ai assuré le déploiement des solutions retenues en environnement de test, ainsi que leur configuration technique et organisationnelle, et échangé avec des prestataires afin d’évaluer les options et les coûts associés.</p>
-                </details>
-                <p class="experience__tools"> <strong>Outils utilisés :</strong> Putty · Serveur linux · wiki/base de connaissance · Office 365 </p>
-              </div>
-          <!-- stage camtel -->
-              <h3> Stagiaire data analyst</h3>
-              <p class="experience-meta"> CAMTEL · Douala, Cameroun</p>
-              <span class="experience-date">mai 2023 - juillet 2026</span>
-              <div class="experience-box">
-                <details class="experience-box">
-                  <summary>📌 Réalisations clés</summary>
-                  <p>Lors de ce stage au sein de CAMTEL, j’ai travaillé sur l’<strong>exploitation et la valorisation de données commerciales multi-sources</strong> (ventes, clients et offres), dans un contextede pilotage de la performance.</p>
-                  <p>J’ai assuré la structuration, le nettoyage et l’analyse des données afin de fiabiliser les indicateurs utilisés par les équipes métiers.</p>
-                  <p>Ces analyses ont conduit à la conception de tableaux de bord décisionnels permettant de suivre le chiffre d’affaires, la performance commerciale et les écarts entre objectifs et résultats.</p>
-                  <p>J’ai également contribué à l’automatisation de reportings récurrents, améliorant la réactivité des équipes et réduisant les tâches manuelles.</p>
-                  <p>Enfin, en collaboration avec les équipes commerciales, j’ai formulé des recommandations basées sur les données afin d’appuyer la prise de décision et l’orientation des actions commerciales.</p>
-                </details>
-                <p class="experience__tools"> <strong>Outils utilisés :</strong> Excel · SQL · Power BI · Python (Pandas) · PowerPoint </p>
-              </div>
-          <!-- Stage pentagone -->
-              <h3> Stagiaire assistante data</h3>
-              <p class="experience-meta"> Pentagone · Garoua, Cameroun</p>
-              <span class="experience-date">juin 2022 - septembre 2022</span>
-              <div class="experience-box">
-                <details class="experience-box">
-                  <summary>📌 Réalisations clés</summary>
-                  <p>Cette première expérience m’a permis de me familiariser avec les <strong>fondamentaux du travail sur la donnée</strong> au sein d’un environnement professionnel.</p>
-                  <p>J’ai participé à la mise à jour et à la maintenance de la base de données clients, en veillant à la cohérence, à la qualité et à la fiabilité des informations.</p>
-                  <p> J’ai également réalisé des requêtes SQL pour extraire des données utiles aux besoins opérationnels, ainsi que des opérations de nettoyage et de préparation des données.</p>
-                  <p>Enfin, j’ai documenté l’ensemble de mes travaux, contribuant à une meilleure traçabilité des processus et des analyses.</p>
-                </details>
-                <p class="experience__tools"> <strong>Outils utilisés :</strong> Word · SQL · PostgreSQL</p>
-          </div>
-          </div>
-        </div>
-    </section>
-    
-    <section id="projets" class="section container">
-      <h2><i class="fa-solid fa-chart-line"></i> Projets sélectionnés</h2>
-      <div class="grid cards">
-        <article class="card">
-          <div class="card__badge">Data analyst</div>
-          <a href="">
-            <img src="" alt="">
-            <p class="action">Terminé</p>
-          <h3>Analyse des prêts bancaire des clients</h3>
-          <ul class="tags"><li>Python</li><li>Power BI</li><li>Power Query</li><li>Spyder</li></ul></br></a>
-        </article>
-        <article class="card">
-          <div class="card__badge">Developpement Web</div>
-          <a href="">
-            <img src="" alt="">
-            <p class="action">En cours</p>
-          <h3>Application Shoplite : vente de vêtement</h3>
-          <ul class="tags"><li>React.js</li><li>Node.js</li><li>Tailwind</li></ul> </a>
-        </article>
-        
-         <article class="card">
-          <div class="card__badge">Data Science</div>
-           <a href="https://github.com/AuroreTakouezim/Analyse-et-Pr-diction-du-Rendement-Agricole/blob/main/agriculture_farming_analysis.ipynb">
-            <img src="assets/image rendement agricole.PNG" alt="Agiculture analysis"> 
-             <p class="action"> Terminé</p>
-          <h3>Analyse et Prédiction du Rendement Agricole</h3>
-          <ul class="tags"><li>Spark</li><li>Kafka</li><li>Scikit-learn</li><li>Python</li><li>Cassandra</li></ul></br> </a>
-          </article> 
-
-        <article class="card">
-          <div class="card__badge">Data Science</div>
-           <a href="https://github.com/AuroreTakouezim/Analyse-des-biais-dans-les-notes-de-films-en-ligne/blob/main/Projet-Capstone.ipynb">
-            <img src="assets/image note film.PNG" alt="Analyse note film"> 
-             <p class="action"> Terminé</p>
-          <h3>Détection de biais dans les systèmes de notation de films</h3>
-          <ul class="tags"><li>Python</li><li>Seaborn</li><li>Pandas</li><li>Data Visualization</li></ul></br> </a>
-          </article> 
-        
-      </div>
-    </section>
-
-    <section id="competences" class="section section--alt">
-      <div class="container">
-        <h2><i class="fa-solid fa-brain"></i> Compétences</h2>
-        <div class="skills">
-          <div class="when">
-            <h3>Langages de programmation </h3>
-              <p class="when">Python </p><p class="when">SQL</p><p class="when">R</p><p class="when">SAS</p><p class="when">VBA</p>
-              <p class="when">HTML</p><p class="when">CSS</p><p class="when">PHP</p><p class="when">Java</p>
-          </div>
-          <div class="when">
-            <h3>Outils de reporting</h3>
-              <p class="when"> Power BI</p>
-              <p class="when">Tableau</p>
-              <p class="when"> Excel</p>
-          </div>
-          <div class="when">
-            <h3>Bases de données</h3>
-              <p class="when"> MySQL</p>
-              <p class="when">SQLite</p>
-              <p class="when">MongoDB</p>
-              <p class="when">PostgreSQL</p>
-          </div>
-          <div class="when">
-            <h3>Big Data & IA </h3>
-              <p class="when">Hadoop</p>
-              <p class="when">Spark</p>
-              <p class="when">Machine learning</p>
-              <p class="when">RAG</p>
-          </div>
-          <div class="when">
-            <h3>Frameworks </h3>
-              <p class="when"> React.js</p>
-              <p class="when">Angular</p>
-          </div>
-          <div class="when">
-            <h3>outils de gestion de projet et de bureautique</h3>
-              <p class="when"> Microsoft 365</p>
-              <p class="when">Jira</p>
-              <p class="when">Méthode Agile</p>
-              <p class="when">Git/Github</p>
-              <p class="when">UML</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="parcours" class="section container">
-      <h2 class="section-title"><i class="fa-solid fa-graduation-cap"></i>Parcours</h2>
-      <div class="timeline">
-
-        <div class="timeline__item">
-          <div class="timeline__content">
-            <h3>Ingenierie en informatique </h3> <h4>Big Data & BI</h4>
-            <div class="timeline__meta">
-              <span class="school">3IL Ingenieurs</span>
-              <span class="date">2023 – Ajourd'hui</span>
-              <span><i class="fa-solid fa-location-dot"></i> Limoges, France</span>
-            </div>
-            <p class="timeline__skills">Big Data · Data mining · Statistiques · Gestion de projets · Business intelligence · dev pro · UX/UI</p>
-          </div>
-        </div>
-        
-        <div class="timeline__item">
-          <div class="timeline__content">
-            <h3>Classe préparatoire en informatique</h3>
-            <div class="timeline__meta">
-              <span class="school">Institut universitaire de la cote</span>
-              <span class="date">2021 – 2023</span>
-              <span class="location"><i class="fa-solid fa-location-dot"></i> Douala, Cameroun </span>
-            </div>
-            <p class="timeline__skills"> Informatique · Sciences de l’ingénieur · Marketing · Management </p>
-        </div>
-      </div> 
-<!-- Section certification -->
-    <section id="certifications" class="section">
-      <h2> Certifications</h2>
-      <div class="certifications">
-        <a href="assets/certification udemy.pdf" target="_blank" class="cert-card">
-          <img src="logo undemy.webp" alt="Udemy logo">
-          <div>
-            <h3>Data Science & Machine Learning</h3>
-            <p>Udemy · 2024</p>
-          </div>
-        </a>
-    
-        <a href="assets/certification openclassrooms.pdf" target="_blank" class="cert-card">
-          <img src="logo openclassrooms2.jfif" alt="Openclassrooms logo">
-          <div>
-            <h3>Python pour l’analyse de données</h3>
-            <p>Openclassrooms · 2024</p>
-          </div>
-        </a>
-        <a href="assets/certification git.pdf" target="_blank" class="cert-card">
-          <img src="logo openclassrooms2.jfif" alt="Openclassrooms logo">
-          <div>
-            <h3>Gérez du code avec Git et GitHub</h3>
-            <p>Openclassrooms · 2024</p>
-          </div>
-        </a>
-      </div>
-</section>
-        </div>
-    </section>
-
-    <!-- Section contact -->
-<section id="contact" class="section section--alt">
-  <h2><i class="fa-solid fa-envelope"></i> Contact</h2>
-
-  <p>
-    Intéressé·e par mon profil ?  
-    N’hésitez pas à me laisser un message.
-  </p>
-
-  <form class="contact-form" action="https://formspree.io/f/mbdadobp" method="POST">
-    <input type="text" name="name" placeholder="Votre nom" required>
-    <input type="email" name="email" placeholder="Votre email" required>
-    <textarea name="message" rows="5" placeholder="Votre message" required></textarea>
-    <button class="btn">Envoyer</button>
-  </form>
-</section>
-
-    
-  </main>
-
-  <footer class="site-footer">
-    <div class="container footer__inner">
-      <p>© <span id="year"></span> Aurore Takouezim</p>
-      <a href="#top" class="to-top" aria-label="Retour en haut">↑</a>
     </div>
-  </footer>
+  </div>
+</section>
 
-  <script src="script.js"></script>
+<!-- ══════ À PROPOS ══════ -->
+<section id="presentation" class="section">
+  <div class="container">
+    <div class="about-wrap">
+      <div class="about-card reveal">
+        <h2>À propos</h2>
+        <div class="about-body">
+          <p>Étudiante en <strong>3ᵉ année de cycle ingénieur informatique (niveau M2)</strong>, spécialisée en <strong>Big Data &amp; Business Intelligence</strong>. J'aime transformer des données brutes en tableaux de bord clairs, en insights actionnables et en recommandations utiles pour soutenir la prise de décision.</p>
+          <p>Rigoureuse, analytique et guidée par la compréhension des enjeux métier, je conçois des solutions data fiables, documentées et adaptées aussi bien aux besoins opérationnels que stratégiques.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</header>
+
+<main>
+<!-- ══════ EXPÉRIENCES ══════ -->
+<section id="experiences" class="section section--alt">
+  <div class="container">
+    <div class="section-header reveal">
+      <h2><span class="ico"><i class="fa-solid fa-briefcase"></i></span> Expériences professionnelles</h2>
+      <p>Mon parcours en entreprise, de la data analyse au déploiement de solutions.</p>
+    </div>
+    <div class="exp-grid">
+
+      <div class="exp-entry reveal">
+        <div class="exp-dot"><i class="fa-solid fa-building"></i></div>
+        <div class="exp-card">
+          <div class="exp-top">
+            <h3>Alternante Ingénieure Informatique</h3>
+            <span class="exp-badge">Alternance</span>
+          </div>
+          <div class="exp-meta">
+            <span><i class="fa-solid fa-building"></i> 3DCERAM SINTO</span>
+            <span><i class="fa-solid fa-location-dot"></i> Limoges, France</span>
+          </div>
+          <span class="exp-date"><i class="fa-regular fa-calendar"></i> Sept. 2025 – Aujourd'hui</span>
+          <details>
+            <summary>Réalisations clés</summary>
+            <div class="exp-details-body">
+              <p>Choix et déploiement d'une base de connaissance pour centraliser la documentation technique de l'entreprise.</p>
+              <p>Développement d'un script Python pour la conversion automatique de documents Word en Markdown.</p>
+              <p>Animation d'ateliers comparatifs (Wiki.js, Bookstack) pour orienter le choix de la solution.</p>
+              <p> Assister à la mise en place de l'infrastructure reseau et de sauvegarde </p>
+              <p>Déploiement en environnement Linux, configuration sécurité/réseau, formation des utilisateurs et rédaction de la documentation.</p>
+            </div>
+          </details>
+          <div class="exp-tools">
+            <strong>Outils :</strong>
+            <span class="tool-tag">Python</span><span class="tool-tag">Markdown</span>
+            <span class="tool-tag">Wiki.js</span><span class="tool-tag">PuTTY</span>
+            <span class="tool-tag">Linux</span><span class="tool-tag">Office 365</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="exp-entry reveal">
+        <div class="exp-dot"><i class="fa-solid fa-building"></i></div>
+        <div class="exp-card">
+          <div class="exp-top">
+            <h3>Stagiaire Ingénieure Informatique</h3>
+            <span class="exp-badge">Stage</span>
+          </div>
+          <div class="exp-meta">
+            <span><i class="fa-solid fa-building"></i> 3DCERAM SINTO</span>
+            <span><i class="fa-solid fa-location-dot"></i> Limoges, France</span>
+          </div>
+          <span class="exp-date"><i class="fa-regular fa-calendar"></i> Avr. 2025 – Août 2025</span>
+          <details>
+            <summary>Réalisations clés</summary>
+            <div class="exp-details-body">
+              <p>Analyse des processus internes et recueil des besoins pour un projet de base de connaissance.</p>
+              <p>Rédaction du cahier des charges et étude comparative de 4 solutions (Wiki.js, Bookstack, Confluence, XWiki).</p>
+              <p>Déploiement en environnement de test et échanges avec des prestataires pour évaluer les options.</p>
+            </div>
+          </details>
+          <div class="exp-tools">
+            <strong>Outils :</strong>
+            <span class="tool-tag">PuTTY</span><span class="tool-tag">Linux</span>
+            <span class="tool-tag">Wiki.js</span><span class="tool-tag">Office 365</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="exp-entry reveal">
+        <div class="exp-dot" style="background:linear-gradient(135deg,var(--accent),#0eab8d)"><i class="fa-solid fa-chart-pie"></i></div>
+        <div class="exp-card">
+          <div class="exp-top">
+            <h3>Stagiaire Data Analyst</h3>
+            <span class="exp-badge exp-badge--data">Data</span>
+          </div>
+          <div class="exp-meta">
+            <span><i class="fa-solid fa-building"></i> CAMTEL</span>
+            <span><i class="fa-solid fa-location-dot"></i> Douala, Cameroun</span>
+          </div>
+          <span class="exp-date"><i class="fa-regular fa-calendar"></i> Mai 2023 – Juil. 2023</span>
+          <details>
+            <summary>Réalisations clés</summary>
+            <div class="exp-details-body">
+              <p>Exploitation et valorisation de données commerciales multi-sources : ventes, clients, offres.</p>
+              <p>Conception de tableaux de bord Power BI pour le suivi du CA et de la performance commerciale.</p>
+              <p>Automatisation de reportings récurrents, réduction des tâches manuelles et recommandations data-driven.</p>
+            </div>
+          </details>
+          <div class="exp-tools">
+            <strong>Outils :</strong>
+            <span class="tool-tag">Excel</span><span class="tool-tag">SQL</span>
+            <span class="tool-tag">Power BI</span><span class="tool-tag">Python (Pandas)</span><span class="tool-tag">PowerPoint</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="exp-entry reveal">
+        <div class="exp-dot" style="background:linear-gradient(135deg,var(--brand2),#c084fc)"><i class="fa-solid fa-table"></i></div>
+        <div class="exp-card">
+          <div class="exp-top">
+            <h3>Stagiaire Assistante Data</h3>
+            <span class="exp-badge exp-badge--data">Data</span>
+          </div>
+          <div class="exp-meta">
+            <span><i class="fa-solid fa-building"></i> Pentagone</span>
+            <span><i class="fa-solid fa-location-dot"></i> Garoua, Cameroun</span>
+          </div>
+          <span class="exp-date"><i class="fa-regular fa-calendar"></i> Juin 2022 – Sept. 2022</span>
+          <details>
+            <summary>Réalisations clés</summary>
+            <div class="exp-details-body">
+              <p>Mise à jour et maintenance de la base de données clients : cohérence, qualité, fiabilité.</p>
+              <p>Requêtes SQL pour l'extraction de données opérationnelles, nettoyage et préparation.</p>
+              <p>Documentation des travaux pour assurer la traçabilité des processus et des analyses.</p>
+            </div>
+          </details>
+          <div class="exp-tools">
+            <strong>Outils :</strong>
+            <span class="tool-tag">Word</span><span class="tool-tag">SQL</span><span class="tool-tag">PostgreSQL</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════ PROJETS ══════ -->
+<section id="projets" class="section">
+  <div class="container">
+    <div class="section-header reveal">
+      <h2><span class="ico"><i class="fa-solid fa-chart-line"></i></span> Projets sélectionnés</h2>
+      <p>Data Science, Business Intelligence et développement web.</p>
+    </div>
+    <div class="proj-grid">
+
+      <article class="proj-card reveal">
+        <div class="proj-thumb proj-thumb-icon">
+          <i class="fa-solid fa-landmark"></i>
+          <span class="proj-cat">Data Analyst</span>
+          <span class="proj-status proj-status--done">Terminé</span>
+        </div>
+        <div class="proj-body">
+          <h3>Analyse des prêts bancaires clients</h3>
+          <p>Analyse exploratoire et modélisation des données de prêts pour identifier les profils à risque et améliorer la décision crédit.</p>
+          <ul class="proj-tags"><li>Python</li><li>Power BI</li><li>Power Query</li><li>Spyder</li></ul>
+        </div>
+        <div class="proj-footer">
+          <a href="https://github.com/AuroreTakouezim/Analyse-et-Pr-diction-du-Rendement-Agricole" target="_blank" class="proj-link">
+            <i class="fa-brands fa-github"></i> Voir sur GitHub <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+      </article>
+
+      <article class="proj-card reveal">
+        <div class="proj-thumb proj-thumb-icon">
+          <i class="fa-solid fa-shirt"></i>
+          <span class="proj-cat">Dev Web</span>
+          <span class="proj-status proj-status--wip">En cours</span>
+        </div>
+        <div class="proj-body">
+          <h3>Shoplite – Application e-commerce vêtements</h3>
+          <p>Application web de vente de vêtements avec catalogue produits, panier et interface d'administration.</p>
+          <ul class="proj-tags"><li>React.js</li><li>Node.js</li><li>Tailwind</li></ul>
+        </div>
+        <div class="proj-footer">
+          <span class="proj-link-none"><i class="fa-solid fa-hammer"></i> En construction</span>
+        </div>
+      </article>
+
+      <article class="proj-card reveal">
+        <div class="proj-thumb">
+          <img src="assets/image rendement agricole.PNG" alt="Agriculture analysis"
+               onerror="this.closest('.proj-thumb').innerHTML='<div class=\'proj-thumb-icon\'><i class=\'fa-solid fa-seedling\'></i></div><span class=\'proj-cat\'>Data Science</span><span class=\'proj-status proj-status--done\'>Terminé</span>'">
+          <span class="proj-cat">Data Science</span>
+          <span class="proj-status proj-status--done">Terminé</span>
+        </div>
+        <div class="proj-body">
+          <h3>Analyse et Prédiction du Rendement Agricole</h3>
+          <p>Pipeline Big Data avec Spark &amp; Kafka pour prédire le rendement agricole via des modèles de machine learning.</p>
+          <ul class="proj-tags"><li>Spark</li><li>Kafka</li><li>Scikit-learn</li><li>Python</li><li>Cassandra</li></ul>
+        </div>
+        <div class="proj-footer">
+          <a href="https://github.com/AuroreTakouezim/Analyse-et-Pr-diction-du-Rendement-Agricole" target="_blank" class="proj-link">
+            <i class="fa-brands fa-github"></i> Voir sur GitHub <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+      </article>
+
+      <article class="proj-card reveal">
+        <div class="proj-thumb">
+          <img src="assets/image note film.PNG" alt="Analyse note film"
+               onerror="this.closest('.proj-thumb').innerHTML='<div class=\'proj-thumb-icon\'><i class=\'fa-solid fa-film\'></i></div><span class=\'proj-cat\'>Data Science</span><span class=\'proj-status proj-status--done\'>Terminé</span>'">
+          <span class="proj-cat">Data Science</span>
+          <span class="proj-status proj-status--done">Terminé</span>
+        </div>
+        <div class="proj-body">
+          <h3>Détection de biais dans les notations de films</h3>
+          <p>Analyse statistique et visualisation des biais dans les systèmes de notation de films en ligne.</p>
+          <ul class="proj-tags"><li>Python</li><li>Seaborn</li><li>Pandas</li><li>Data Viz</li></ul>
+        </div>
+        <div class="proj-footer">
+          <a href="https://github.com/AuroreTakouezim/Analyse-des-biais-dans-les-notes-de-films-en-ligne" target="_blank" class="proj-link">
+            <i class="fa-brands fa-github"></i> Voir sur GitHub <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════ COMPÉTENCES ══════ -->
+<section id="competences" class="section section--alt">
+  <div class="container">
+    <div class="section-header reveal">
+      <h2><span class="ico"><i class="fa-solid fa-brain"></i></span> Compétences</h2>
+     
+    </div>
+    <div class="skills-grid">
+      <div class="skill-card reveal">
+        <div class="skill-card__head">
+          <div class="skill-ico" style="background:linear-gradient(135deg,#5b8cff,#9b6bff)"><i class="fa-solid fa-code"></i></div>
+          <h3>Langages</h3>
+        </div>
+        <div class="pills">
+          <span class="pill">Python</span><span class="pill">SQL</span><span class="pill">R</span>
+          <span class="pill">SAS</span><span class="pill">VBA</span><span class="pill">HTML</span>
+          <span class="pill">CSS</span><span class="pill">PHP</span><span class="pill">Java</span>
+        </div>
+      </div>
+      <div class="skill-card reveal">
+        <div class="skill-card__head">
+          <div class="skill-ico" style="background:linear-gradient(135deg,#f9a825,#e65100)"><i class="fa-solid fa-chart-bar"></i></div>
+          <h3>Reporting &amp; BI</h3>
+        </div>
+        <div class="pills">
+          <span class="pill">Power BI</span><span class="pill">Tableau</span><span class="pill">Excel</span>
+        </div>
+      </div>
+      <div class="skill-card reveal">
+        <div class="skill-card__head">
+          <div class="skill-ico" style="background:linear-gradient(135deg,#00c9a7,#085c4e)"><i class="fa-solid fa-database"></i></div>
+          <h3>Bases de données</h3>
+        </div>
+        <div class="pills">
+          <span class="pill">MySQL</span><span class="pill">SQLite</span>
+          <span class="pill">MongoDB</span><span class="pill">PostgreSQL</span>
+        </div>
+      </div>
+      <div class="skill-card reveal">
+        <div class="skill-card__head">
+          <div class="skill-ico" style="background:linear-gradient(135deg,#ff5e62,#9b0000)"><i class="fa-solid fa-fire"></i></div>
+          <h3>Big Data &amp; IA</h3>
+        </div>
+        <div class="pills">
+          <span class="pill">Hadoop</span><span class="pill">Spark</span>
+          <span class="pill">Machine Learning</span><span class="pill">RAG</span>
+        </div>
+      </div>
+      <div class="skill-card reveal">
+        <div class="skill-card__head">
+          <div class="skill-ico" style="background:linear-gradient(135deg,#38bdf8,#0c4a6e)"><i class="fa-brands fa-react"></i></div>
+          <h3>Frameworks</h3>
+        </div>
+        <div class="pills">
+          <span class="pill">React.js</span><span class="pill">Angular</span>
+        </div>
+      </div>
+      <div class="skill-card reveal">
+        <div class="skill-card__head">
+          <div class="skill-ico" style="background:linear-gradient(135deg,#8b5cf6,#3b0764)"><i class="fa-solid fa-gear"></i></div>
+          <h3>Outils &amp; Gestion</h3>
+        </div>
+        <div class="pills">
+          <span class="pill">Microsoft 365</span><span class="pill">Jira</span>
+          <span class="pill">Agile / Scrum</span><span class="pill">Git</span>
+          <span class="pill">GitHub</span><span class="pill">UML</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════ PARCOURS ══════ -->
+<section id="parcours" class="section">
+  <div class="container">
+    <div class="section-header reveal">
+      <h2><span class="ico"><i class="fa-solid fa-graduation-cap"></i></span> Formation</h2>
+    </div>
+    <div class="edu-wrap">
+      <div class="edu-card reveal">
+        <div class="edu-top">
+          <div>
+            <h3>Ingénierie en Informatique</h3>
+            <h4>Big Data &amp; Business Intelligence</h4>
+          </div>
+          <span class="edu-year">2023 – Aujourd'hui</span>
+        </div>
+        <div class="edu-meta">
+          <span><i class="fa-solid fa-school"></i> 3IL Ingénieurs</span>
+          <span><i class="fa-solid fa-location-dot"></i> Limoges, France</span>
+        </div>
+        <p class="edu-skills">Big Data · Data Mining · Statistiques · Gestion de projets · Business Intelligence · UX/UI · Développement professionnel</p>
+      </div>
+      <div class="edu-card reveal">
+        <div class="edu-top">
+          <div><h3>Classe préparatoire en Informatique</h3></div>
+          <span class="edu-year">2021 – 2023</span>
+        </div>
+        <div class="edu-meta">
+          <span><i class="fa-solid fa-school"></i> Institut Universitaire de la Côte</span>
+          <span><i class="fa-solid fa-location-dot"></i> Douala, Cameroun</span>
+        </div>
+        <p class="edu-skills">Informatique · Sciences de l'ingénieur · Marketing · Management</p>
+      </div>
+    </div>
+
+    <div class="section-header reveal" style="margin-top:3.5rem">
+      <h2><span class="ico"><i class="fa-solid fa-certificate"></i></span> Certifications</h2>
+    </div>
+    <div class="cert-grid">
+      <a href="assets/certification udemy.pdf" target="_blank" class="cert-card reveal">
+        <div class="cert-av">U</div>
+        <div><h3>Data Science &amp; Machine Learning</h3><p>Udemy · 2024</p></div>
+        <i class="fa-solid fa-arrow-right cert-arr"></i>
+      </a>
+      <a href="assets/certification openclassrooms.pdf" target="_blank" class="cert-card reveal">
+        <div class="cert-av">OC</div>
+        <div><h3>Python pour l'analyse de données</h3><p>OpenClassrooms · 2024</p></div>
+        <i class="fa-solid fa-arrow-right cert-arr"></i>
+      </a>
+      <a href="assets/certification git.pdf" target="_blank" class="cert-card reveal">
+        <div class="cert-av"><img src="logo openclassrooms2.jfif"> </div>
+        <div><h3>Gérez du code avec Git et GitHub</h3><p>OpenClassrooms · 2024</p></div>
+        <i class="fa-solid fa-arrow-right cert-arr"></i>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ══════ CONTACT ══════ -->
+<section id="contact" class="section section--alt">
+  <div class="container">
+    <div class="section-header reveal">
+      <h2><span class="ico"><i class="fa-solid fa-envelope"></i></span> Contact</h2>
+      <p>Une opportunité, un projet, une question ? Je lis tous mes messages.</p>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-left reveal">
+        <h3>Parlons de votre projet</h3>
+        <p>Je suis actuellement en alternance et ouverte à de nouveaux projets data, des collaborations ou simplement à un échange professionnel.</p>
+        <div class="contact-links">
+          <a href="mailto:aurore@example.com" class="contact-link">
+            <i class="fa-regular fa-envelope"></i><span>Gmail</span><i class="fa-solid fa-arrow-right arr"></i>
+          </a>
+          <a href="tel:+33600000000" class="contact-link">
+            <i class="fa-solid fa-phone"></i><span>+33 6 65 11 51 02 </span><i class="fa-solid fa-arrow-right arr"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/aurore-takouezim" target="_blank" class="contact-link">
+            <i class="fa-brands fa-linkedin"></i><span>LinkedIn</span><i class="fa-solid fa-arrow-right arr"></i>
+          </a>
+          <a href="https://github.com/auroretakouezim" target="_blank" class="contact-link">
+            <i class="fa-brands fa-github"></i><span>GitHub</span><i class="fa-solid fa-arrow-right arr"></i>
+          </a>
+          <div class="contact-link" style="cursor:default">
+            <i class="fa-solid fa-location-dot"></i><span>Limoges, France</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-form-wrap reveal">
+        <h3>Envoyer un message</h3>
+        <form action="https://formspree.io/f/mbdadobp" method="POST">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="f-name">Nom</label>
+              <input id="f-name" type="text" name="name" placeholder="Votre nom" required>
+            </div>
+            <div class="form-group">
+              <label for="f-email">Email</label>
+              <input id="f-email" type="email" name="email" placeholder="votre@email.com" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="f-msg">Message</label>
+            <textarea id="f-msg" name="message" rows="5" placeholder="Votre message…" required></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary" style="width:100%;justify-content:center;margin-top:.2rem">
+            <i class="fa-solid fa-paper-plane"></i> Envoyer</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- ══════ FOOTER ══════ -->
+<footer class="site-footer">
+  <div class="container footer__inner">
+    <p>© <span id="year"></span> Aurore Takouezim </p>
+    <div class="footer-social">
+      <a href="https://www.linkedin.com/in/aurore-takouezim" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+      <a href="https://github.com/auroretakouezim" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+      <a href="mailto:aurore@example.com" aria-label="Email"><i class="fa-regular fa-envelope"></i></a>
+    </div>
+    <a href="#top" class="to-top" aria-label="Retour en haut"><i class="fa-solid fa-arrow-up"></i></a>
+  </div>
+</footer>
+<script src="script.js"></script>
+</body>
 </body>
 </html>
